@@ -3,7 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Tahir</title>
+
+  <!-- ── PRIMARY SEO ── -->
+  <title>Muhammad Tahir — Writer, Portfolio Manager & Personal Finance Consultant</title>
+  <meta name="description" content="Muhammad Tahir is a portfolio manager, writer, and personal finance consultant based in Lagos. He writes about investing, money, and ideas on Medium and Substack." />
+  <meta name="keywords" content="Muhammad Tahir, personal finance Nigeria, investing Nigeria, portfolio manager Lagos, finance writer, ghostwriting, financial literacy, NGX stocks" />
+  <meta name="author" content="Muhammad Tahir" />
+  <link rel="canonical" href="https://iamuhammadtahir.com/" />
+
+  <!-- ── OPEN GRAPH (WhatsApp, LinkedIn, Facebook previews) ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iamuhammadtahir.com/" />
+  <meta property="og:title" content="Muhammad Tahir — Writer & Personal Finance Consultant" />
+  <meta property="og:description" content="Portfolio manager, writer, and personal finance consultant. Writing about investing, money, and ideas worth sitting with." />
+  <meta property="og:image" content="https://iamuhammadtahir.com/og-image.png" />
+  <meta property="og:locale" content="en_NG" />
+  <meta property="og:site_name" content="Muhammad Tahir" />
+
+  <!-- ── TWITTER / X CARD ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@iamuhammadtahir" />
+  <meta name="twitter:creator" content="@iamuhammadtahir" />
+  <meta name="twitter:title" content="Muhammad Tahir — Writer & Personal Finance Consultant" />
+  <meta name="twitter:description" content="Portfolio manager, writer, and personal finance consultant. Writing about investing, money, and ideas worth sitting with." />
+  <meta name="twitter:image" content="https://iamuhammadtahir.com/og-image.png" />
+
+  <!-- ── STRUCTURED DATA (Google rich results) ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Tahir",
+    "url": "https://iamuhammadtahir.com",
+    "image": "https://iamuhammadtahir.com/og-image.png",
+    "jobTitle": "Portfolio Manager & Writer",
+    "description": "Portfolio manager, personal finance writer, ghostwriter, and consultant based in Lagos, Nigeria.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" },
+    "sameAs": [
+      "https://iamuhammadtahir.medium.com",
+      "https://iamuhammadtahir.substack.com",
+      "https://x.com/iamuhammadtahir",
+      "https://www.linkedin.com/in/iamuhammadtahir/"
+    ],
+    "knowsAbout": ["Personal Finance", "Investing", "Stock Market", "Nigerian Exchange Group", "Asset Management", "Financial Literacy"]
+  }
+  </script>
+
+  <!-- ── FAVICON — SVG inline, works everywhere ── -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%235D87CC'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia%2C serif' font-size='15' font-weight='400' fill='%23F4F0E4'%3EMT%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%235D87CC'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia%2C serif' font-size='15' font-weight='400' fill='%23F4F0E4'%3EMT%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#5D87CC" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -319,6 +369,56 @@
       color: var(--olive-light);
     }
 
+    /* ── SERVICES ── */
+    .services { background: var(--cream); padding: 7rem 5rem; position: relative; overflow: hidden; }
+    .services::before {
+      content: 'SERVICES'; position: absolute; top: -2rem; right: -1rem;
+      font-family: var(--serif); font-size: 12rem; font-weight: 300;
+      color: rgba(0,0,0,0.03); line-height: 1; user-select: none; white-space: nowrap;
+    }
+
+    /* Three service cards across top */
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px; margin-bottom: 1.5px;
+    }
+    .service-card {
+      background: var(--cream-dark); padding: 3rem 2.5rem;
+      position: relative; overflow: hidden;
+      border-top: 3px solid transparent;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .service-card:hover { background: #ddd8c0; border-top-color: var(--olive); }
+    .service-num {
+      font-family: var(--mono); font-size: 0.65rem;
+      letter-spacing: 0.15em; color: var(--ink-faint);
+      margin-bottom: 1.5rem; display: block;
+    }
+    .service-icon {
+      font-size: 1.8rem; margin-bottom: 1.25rem; display: block; line-height: 1;
+    }
+    .service-title {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 400; color: var(--ink); line-height: 1.15; margin-bottom: 1rem;
+    }
+    .service-desc {
+      font-family: var(--sans); font-size: 0.88rem;
+      color: var(--ink-muted); line-height: 1.7; margin-bottom: 1.5rem;
+    }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .service-tag {
+      font-family: var(--mono); font-size: 0.58rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--olive-dark); background: rgba(107,122,58,0.1);
+      padding: 0.25rem 0.65rem;
+    }
+
+    /* Consultation panel — full width below the cards */
+    .consult-panel {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0; background: var(--ink);
+    }
+
     /* ── PROJECTS ── */
     .projects { padding: 7rem 5rem; background: var(--cream-dark); }
     .project-item {
@@ -415,26 +515,105 @@
     .reveal { opacity:0; transform:translateY(30px); transition:opacity .7s ease,transform .7s ease; }
     .reveal.visible { opacity:1; transform:translateY(0); }
 
+    /* ── MOBILE NAV TOGGLE ── */
+    .nav-toggle {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 4px; background: none; border: none;
+    }
+    .nav-toggle span {
+      display: block; width: 22px; height: 1.5px;
+      background: currentColor; transition: all 0.3s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
     /* ── RESPONSIVE ── */
-    @media(max-width:900px){
-      nav{padding:1.2rem 1.5rem;}
-      nav.scrolled{padding:.9rem 1.5rem;}
-      .nav-links{gap:1.5rem;}
-      .hero{grid-template-columns:1fr;min-height:auto;}
-      .hero-left{padding:8rem 2rem 4rem;min-height:60vh;}
-      .hero-left::after{display:none;}
-      .hero-right{padding:3rem 2rem;}
-      .hero-deco{font-size:8rem;top:2rem;right:1rem;}
-      .about{grid-template-columns:1fr;padding:5rem 2rem;gap:1.5rem;}
-      .about-body p{font-size:1.25rem;}
-      .writing,.projects,.connect{padding:5rem 2rem;}
-      .writing-grid{grid-template-columns:1fr;gap:2px;}
-      .consult-inner{grid-template-columns:1fr;gap:3rem;}
-      .consultation{padding:5rem 2rem;}
-      .project-item{grid-template-columns:50px 1fr;}
-      .project-tag{display:none;}
-      footer{padding:1.5rem 2rem;flex-direction:column;gap:1rem;text-align:center;}
-      .footer-links{justify-content:center;}
+
+    /* Tablet */
+    @media(max-width:1024px){
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .writing-grid  { grid-template-columns: 1fr 1fr; }
+      .consult-panel { grid-template-columns: 1fr; }
+    }
+
+    /* Mobile */
+    @media(max-width:768px){
+      /* Nav — hamburger */
+      nav { padding: 1.1rem 1.5rem; }
+      nav.scrolled { padding: 0.85rem 1.5rem; }
+      .nav-toggle {
+        display: flex;
+        color: var(--cream);
+      }
+      nav.scrolled .nav-toggle { color: var(--ink); }
+      .nav-links {
+        display: none;
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: var(--ink);
+        flex-direction: column; align-items: center; justify-content: center;
+        gap: 2.5rem; z-index: 150;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a {
+        font-size: 1.1rem; letter-spacing: 0.12em;
+        color: var(--cream) !important;
+      }
+      .nav-links a:hover { color: var(--olive-light) !important; }
+
+      /* Hero */
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 7rem 1.5rem 3.5rem; min-height: 65vh; }
+      .hero-left::after { display: none; }
+      .hero-right { padding: 2rem 1.5rem 3rem; min-height: 40vw; }
+      .hero-deco { font-size: 7rem; top: 1.5rem; right: 1rem; }
+      .hero-blob { width: 140px; height: 140px; bottom: 2rem; right: 1.5rem; }
+
+      /* About */
+      .about { grid-template-columns: 1fr; padding: 4rem 1.5rem; gap: 1.25rem; }
+      .about-body p { font-size: 1.2rem; }
+
+      /* Sections */
+      .writing  { padding: 4rem 1.5rem; }
+      .services { padding: 4rem 1.5rem; }
+      .projects { padding: 4rem 1.5rem; }
+      .connect  { padding: 4rem 1.5rem; }
+
+      /* Writing */
+      .writing-grid { grid-template-columns: 1fr; gap: 2px; }
+      .section-title { font-size: 2.2rem; }
+
+      /* Services */
+      .services-grid { grid-template-columns: 1fr; gap: 2px; }
+      .service-card  { padding: 2rem 1.5rem; }
+      .consult-panel { grid-template-columns: 1fr; }
+      .consult-panel > div { padding: 2rem 1.5rem !important; }
+
+      /* Projects */
+      .project-item { grid-template-columns: 44px 1fr; gap: 1rem; }
+      .project-tag  { display: none; }
+      .project-info h3 { font-size: 1.4rem; }
+
+      /* Connect */
+      .social-links { gap: 0.75rem; }
+      .social-link  { padding: 0.6rem 1rem; font-size: 0.65rem; }
+
+      /* Footer */
+      footer { padding: 1.5rem 1.5rem; flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-links { justify-content: center; flex-wrap: wrap; gap: 0.5rem; }
+      .footer-links a { padding: 0.5rem 0.8rem; font-size: 0.6rem; }
+
+      /* Hide custom cursor on touch */
+      .cursor-dot, .cursor-ring { display: none; }
+    }
+
+    /* Small phones */
+    @media(max-width:420px){
+      .hero-left { padding: 6rem 1.25rem 3rem; }
+      .hero-name  { font-size: 3rem; }
+      .about, .writing, .services, .projects, .connect { padding: 3.5rem 1.25rem; }
+      .writing-cta { flex-direction: column; }
+      .writing-cta .btn { width: 100%; text-align: center; justify-content: center; }
     }
   </style>
 </head>
@@ -446,12 +625,15 @@
 <!-- NAV -->
 <nav id="mainNav" class="on-hero">
   <a href="#" class="nav-logo">MT</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#writing">Writing</a></li>
-    <li><a href="#consult">Consult</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#connect">Connect</a></li>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" class="nav-close">About</a></li>
+    <li><a href="#writing" class="nav-close">Writing</a></li>
+    <li><a href="#services" class="nav-close">Services</a></li>
+    <li><a href="#projects" class="nav-close">Projects</a></li>
+    <li><a href="#connect" class="nav-close">Connect</a></li>
   </ul>
 </nav>
 
@@ -472,7 +654,7 @@
 <section class="about" id="about">
   <span class="about-label">About</span>
   <div class="about-body reveal">
-    <p>I'm Muhammad — a writer and thinker exploring the intersection of <em>money, markets,</em> and the ideas that quietly shape our decisions.</p>
+    <p>I'm Muhammad — a portfolio manager at an asset management firm, and a writer exploring the intersection of <em>money, markets,</em> and the ideas that quietly shape our decisions.</p>
     <p>My work lives at the edge of <span class="green">financial literacy</span> and honest storytelling. I believe understanding money shouldn't require a finance degree — just curiosity and a willingness to look closely.</p>
   </div>
 </section>
@@ -546,15 +728,65 @@
   </div>
 </section>
 
-<!-- CONSULTATION -->
-<section class="consultation" id="consult">
-  <div class="consult-inner">
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-header">
+    <h2 class="section-title dark">Services</h2>
+    <div class="section-line dark"></div>
+  </div>
 
-    <div class="consult-left reveal">
+  <!-- Three service cards -->
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <span class="service-num">01</span>
+      <span class="service-icon">✍︎</span>
+      <h3 class="service-title">Writing &amp; Ghostwriting</h3>
+      <p class="service-desc">Finance content that reads like it was written by a human who actually understands markets. I write for brands, publications, and founders who need clear, credible financial storytelling.</p>
+      <div class="service-tags">
+        <span class="service-tag">Ghostwriting</span>
+        <span class="service-tag">Finance content</span>
+        <span class="service-tag">Brand content</span>
+        <span class="service-tag">Newsletters</span>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-num">02</span>
+      <span class="service-icon">◎</span>
+      <h3 class="service-title">Speaking</h3>
+      <p class="service-desc">Available for podcast appearances, panel discussions, and conversations on personal finance, investing, and building wealth in the African context — especially Nigeria.</p>
+      <div class="service-tags">
+        <span class="service-tag">Podcasts</span>
+        <span class="service-tag">Panels</span>
+        <span class="service-tag">Personal finance</span>
+        <span class="service-tag">Investing</span>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-num">03</span>
+      <span class="service-icon">◈</span>
+      <h3 class="service-title">1-on-1 Consultation</h3>
+      <p class="service-desc">A private 45-minute session to look at your specific situation — your numbers, your goals, and what actually makes sense for you next. No templates, no generic advice.</p>
+      <div class="service-tags">
+        <span class="service-tag">Budgeting</span>
+        <span class="service-tag">Investing</span>
+        <span class="service-tag">Stocks &amp; Sukuk</span>
+        <span class="service-tag">Financial review</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Consultation form panel — full width -->
+  <div class="consult-panel">
+
+    <div class="consult-left reveal" style="padding: 4rem;">
       <p class="consult-eyebrow">1-on-1 Session</p>
-      <h2>Let's talk about<br/><em>your money.</em></h2>
-      <p>Five years of writing about personal finance has taught me one thing: the best advice is specific. Not rules of thumb, not generic tips — a real conversation about your actual situation.</p>
-      <p>Book a private 45-minute session and we'll look at wherever you are right now and figure out what makes sense next.</p>
+      <h2 style="font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.1;color:var(--cream);margin-bottom:1.5rem;">Let's talk about<br/><em style="font-style:italic;color:var(--olive-light);">your money.</em></h2>
+      <p style="font-family:var(--sans);font-size:.95rem;color:var(--ink-faint);line-height:1.75;margin-bottom:1.25rem;">Five years of writing about personal finance and working in asset management has taught me one thing: the best advice is specific. Not rules of thumb, not generic tips — a real conversation about your actual situation.</p>
+      <p style="font-family:var(--sans);font-size:.95rem;color:var(--ink-faint);line-height:1.75;margin-bottom:2rem;">Book a private 45-minute session and we'll look at wherever you are right now and figure out what makes sense next.</p>
       <ul class="consult-list">
         <li>Building or reviewing your budget and savings plan</li>
         <li>Getting started with investing — where and how</li>
@@ -564,23 +796,18 @@
       </ul>
     </div>
 
-    <div class="consult-form-panel reveal">
+    <div class="consult-form-panel reveal" style="padding: 4rem;">
       <h3 class="form-heading">Book a session</h3>
       <p class="form-subhead">45 min · Free introductory call</p>
       <div class="form-divider"></div>
-
-      <p class="form-body-text">
-        Fill in a short form — your name, email, what you'd like to focus on, and a little context about where you are right now. Muhammad will follow up within 48 hours to confirm a time.
-      </p>
-
+      <p class="form-body-text">Fill in a short form — your name, email, what you'd like to focus on, and a little context about where you are right now. Muhammad will follow up within 48 hours to confirm a time.</p>
       <div class="form-topics">
         <span class="form-topic">Budgeting</span>
         <span class="form-topic">Investing</span>
-        <span class="form-topic">Stocks & Sukuk</span>
+        <span class="form-topic">Stocks &amp; Sukuk</span>
         <span class="form-topic">Debt</span>
         <span class="form-topic">Financial review</span>
       </div>
-
       <a href="https://docs.google.com/forms/d/1lWRSQE9JhF3lMTQsIPeFIF0J3u_4Xn6O5wmaw3eTKGs/viewform"
          target="_blank" rel="noopener" class="form-cta-btn">
         Request a session →
@@ -659,6 +886,22 @@
   document.querySelectorAll('a,button').forEach(el=>{
     el.addEventListener('mouseenter',()=>{ring.style.width='56px';ring.style.height='56px';ring.style.borderColor='var(--olive-muted)';});
     el.addEventListener('mouseleave',()=>{ring.style.width='36px';ring.style.height='36px';ring.style.borderColor='var(--olive)';});
+  });
+
+  /* HAMBURGER MENU */
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.nav-close').forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.classList.remove('open');
+      navLinks.classList.remove('open');
+      document.body.style.overflow = '';
+    });
   });
 
   /* STICKY NAV */
