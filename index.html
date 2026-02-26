@@ -524,7 +524,7 @@
     .reveal { opacity:0; transform:translateY(30px); transition:opacity .7s ease,transform .7s ease; }
     .reveal.visible { opacity:1; transform:translateY(0); }
 
-    /* ── MOBILE NAV TOGGLE ── */
+    .nav-close-btn { display: none; }
     .nav-toggle {
       display: none; flex-direction: column; gap: 5px;
       cursor: pointer; padding: 4px; background: none; border: none;
@@ -564,6 +564,16 @@
         gap: 2.5rem; z-index: 150;
       }
       .nav-links.open { display: flex; }
+      .nav-close-btn {
+        display: flex;
+        position: absolute; top: 1.5rem; right: 1.5rem;
+        background: none; border: 1px solid rgba(255,255,255,0.2);
+        color: var(--cream); font-size: 1rem;
+        width: 40px; height: 40px;
+        align-items: center; justify-content: center;
+        cursor: pointer; transition: background 0.2s, border-color 0.2s;
+      }
+      .nav-close-btn:hover { background: var(--olive); border-color: var(--olive); }
       .nav-links a {
         font-size: 1.1rem; letter-spacing: 0.12em;
         color: var(--cream) !important;
@@ -638,6 +648,7 @@
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
+    <button class="nav-close-btn" id="navClose" aria-label="Close menu">✕</button>
     <li><a href="#about" class="nav-close">About</a></li>
     <li><a href="#writing" class="nav-close">Writing</a></li>
     <li><a href="#services" class="nav-close">Services</a></li>
@@ -900,17 +911,22 @@
   /* HAMBURGER MENU */
   const navToggle = document.getElementById('navToggle');
   const navLinks  = document.getElementById('navLinks');
+  const navClose  = document.getElementById('navClose');
+
+  function closeMenu() {
+    navToggle.classList.remove('open');
+    navLinks.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
   navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('open');
     navLinks.classList.toggle('open');
     document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
   });
+  navClose.addEventListener('click', closeMenu);
   document.querySelectorAll('.nav-close').forEach(link => {
-    link.addEventListener('click', () => {
-      navToggle.classList.remove('open');
-      navLinks.classList.remove('open');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeMenu);
   });
 
   /* STICKY NAV */
