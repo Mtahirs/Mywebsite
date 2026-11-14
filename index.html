@@ -1,26 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Tahir — Writer & Portfolio Manager</title>
-  <meta name="description" content="Muhammad Tahir is a portfolio manager, writer, and personal finance consultant based in Lagos. He writes about investing, money, and ideas on Medium and Substack." />
-  <meta name="keywords" content="Muhammad Tahir, personal finance Nigeria, investing Nigeria, portfolio manager Lagos, finance writer, ghostwriting, financial literacy, NGX stocks" />
+  <title>Muhammad Tahir — Writer & Investment Professional</title>
+  <meta name="description" content="Muhammad Tahir is a finance professional and writer based in Lagos. He writes about money, markets, Islamic finance, and life on Medium and Substack." />
+  <meta name="keywords" content="Muhammad Tahir, personal finance Nigeria, investing Nigeria, Islamic finance writer, finance writer Lagos, ghostwriting, fintech content, financial literacy, NGX stocks" />
   <meta name="author" content="Muhammad Tahir" />
   <link rel="canonical" href="https://iamuhammadtahir.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://iamuhammadtahir.com/" />
-  <meta property="og:title" content="Muhammad Tahir — Writer & Portfolio Manager" />
-  <meta property="og:description" content="Portfolio manager, writer, and personal finance consultant. Writing about investing, money, and ideas worth sitting with." />
+  <meta property="og:title" content="Muhammad Tahir — Writer & Investment Professional" />
+  <meta property="og:description" content="Finance professional and writer in Lagos. Writing about money, markets, and ideas worth sitting with." />
   <meta property="og:image" content="https://iamuhammadtahir.com/og-image.png" />
   <meta property="og:locale" content="en_NG" />
   <meta property="og:site_name" content="Muhammad Tahir" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@iamuhammadtahir" />
   <meta name="twitter:creator" content="@iamuhammadtahir" />
-  <meta name="twitter:title" content="Muhammad Tahir — Writer & Portfolio Manager" />
-  <meta name="twitter:description" content="Portfolio manager, writer, and personal finance consultant. Writing about investing, money, and ideas worth sitting with." />
+  <meta name="twitter:title" content="Muhammad Tahir — Writer & Investment Professional" />
+  <meta name="twitter:description" content="Finance professional and writer in Lagos. Writing about money, markets, and ideas worth sitting with." />
   <meta name="twitter:image" content="https://iamuhammadtahir.com/og-image.png" />
   <script type="application/ld+json">
   {
@@ -29,8 +28,8 @@
     "name": "Muhammad Tahir",
     "url": "https://iamuhammadtahir.com",
     "image": "https://iamuhammadtahir.com/og-image.png",
-    "jobTitle": "Writer & Portfolio Manager",
-    "description": "Portfolio manager, personal finance writer, ghostwriter, and consultant based in Lagos, Nigeria.",
+    "jobTitle": "Writer & Investment Professional",
+    "description": "Finance professional and writer based in Lagos, Nigeria, writing about money, markets, and Islamic finance.",
     "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" },
     "sameAs": [
       "https://iamuhammadtahir.medium.com",
@@ -38,7 +37,7 @@
       "https://x.com/iamuhammadtahir",
       "https://www.linkedin.com/in/iamuhammadtahir/"
     ],
-    "knowsAbout": ["Personal Finance", "Investing", "Stock Market", "Nigerian Exchange Group", "Asset Management", "Financial Literacy"]
+    "knowsAbout": ["Personal Finance", "Investing", "Islamic Finance", "Stock Market", "Nigerian Exchange Group", "Asset Management", "Financial Literacy"]
   }
   </script>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%235D87CC'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia%2C serif' font-size='15' font-weight='400' fill='%23F4F0E4'%3EMT%3C/text%3E%3C/svg%3E" />
@@ -139,7 +138,7 @@
 
     /* ── SERVICES ── */
     .services { background: var(--cream); padding: 7rem 5rem; position: relative; overflow: hidden; }
-    .services::before { content: 'SERVICES'; position: absolute; top: -2rem; right: -1rem; font-family: var(--serif); font-size: 12rem; font-weight: 300; color: rgba(0,0,0,0.03); line-height: 1; user-select: none; white-space: nowrap; }
+    .services::before { content: 'WORK'; position: absolute; top: -2rem; right: -1rem; font-family: var(--serif); font-size: 12rem; font-weight: 300; color: rgba(0,0,0,0.03); line-height: 1; user-select: none; white-space: nowrap; }
     .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; margin-bottom: 1.5px; }
     .service-card { background: var(--cream-dark); padding: 3rem 2.5rem; position: relative; overflow: hidden; border-top: 3px solid transparent; transition: border-color 0.3s, background 0.3s; }
     .service-card:hover { background: #ddd8c0; border-top-color: var(--olive); }
@@ -150,54 +149,21 @@
     .service-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .service-tag { font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--olive-dark); background: rgba(107,122,58,0.1); padding: 0.25rem 0.65rem; }
 
-    /* ── CONSULT PANEL ── */
-    .consult-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--ink); }
+    /* ── NOW ── */
+    .now { display: grid; grid-template-columns: 240px 1fr; padding: 5rem 5rem 6rem; border-top: 1px solid var(--cream-dark); }
+    .now-list { list-style: none; max-width: 640px; }
+    .now-list li { font-family: var(--serif); font-size: 1.35rem; font-weight: 300; line-height: 1.6; color: var(--ink); padding: 0.6rem 0; border-bottom: 1px solid var(--cream-dark); display: flex; gap: 1rem; }
+    .now-list li::before { content: '→'; font-family: var(--mono); font-size: 0.8rem; color: var(--olive); padding-top: 0.45rem; }
+    .now-updated { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-top: 1.25rem; }
 
-    .consult-left-dark { background: var(--ink); padding: 4rem; }
-    .consult-eyebrow { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--olive-light); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
-    .consult-eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--olive-light); }
-    .consult-heading { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; line-height: 1.1; color: var(--cream); margin-bottom: 1.25rem; }
-    .consult-heading em { font-style: italic; color: var(--olive-light); }
-    .consult-intro { font-family: var(--sans); font-size: 0.9rem; color: var(--ink-faint); line-height: 1.75; margin-bottom: 0; }
-
-    .consult-tiers { display: flex; flex-direction: column; gap: 1px; margin-top: 2rem; }
-    .consult-tier { background: #242422; padding: 1.75rem 2rem; border-left: 3px solid transparent; transition: border-color 0.25s, background 0.25s; }
-    .consult-tier:hover { background: #2c2c2a; border-left-color: var(--olive-muted); }
-    .tier-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; gap: 1rem; }
-    .tier-label { font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--olive-light); padding-top: 0.15rem; }
-    .tier-price { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; color: var(--cream); white-space: nowrap; line-height: 1.1; text-align: right; }
-    .tier-price small { font-family: var(--mono); font-size: 0.58rem; color: var(--ink-faint); letter-spacing: 0.08em; display: block; margin-top: 0.2rem; }
-    .tier-title { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; color: var(--cream); margin-bottom: 0.5rem; line-height: 1.2; }
-    .tier-desc { font-family: var(--sans); font-size: 0.82rem; color: var(--ink-faint); line-height: 1.65; }
-
-    .eligibility-bar { margin-top: 2rem; padding: 1.25rem 1.5rem; background: rgba(107,122,58,0.1); border: 1px solid rgba(168,184,106,0.2); display: flex; align-items: flex-start; gap: 0.85rem; }
-    .eligibility-icon { font-family: var(--mono); font-size: 0.7rem; color: var(--olive-light); flex-shrink: 0; padding-top: 0.15rem; }
-    .eligibility-text { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-faint); line-height: 1.65; }
-    .eligibility-text strong { font-family: var(--mono); font-size: 0.72rem; color: var(--olive-light); font-weight: 400; letter-spacing: 0.04em; }
-
-    /* Right: booking panel */
-    .consult-form-panel { background: #111110; padding: 4rem; display: flex; flex-direction: column; }
-    .form-heading { font-family: var(--serif); font-size: 1.6rem; font-weight: 300; color: var(--cream); margin-bottom: 0.4rem; line-height: 1.2; }
-    .form-subhead { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 2rem; }
-    .form-divider { height: 1px; background: rgba(255,255,255,0.06); margin-bottom: 2rem; }
-
-    .session-options { display: flex; flex-direction: column; gap: 1px; margin-bottom: 2rem; }
-    .session-option { display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.25rem; background: #1c1c1a; cursor: pointer; border: 1px solid transparent; transition: border-color 0.2s, background 0.2s; }
-    .session-option:hover,
-    .session-option.selected { border-color: rgba(168,184,106,0.35); background: #222220; }
-    .session-radio { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--ink-faint); flex-shrink: 0; transition: border-color 0.2s, background 0.2s; }
-    .session-option.selected .session-radio { border-color: var(--olive-light); background: var(--olive-light); }
-    .session-info { flex: 1; }
-    .session-name { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream); }
-    .session-detail { font-family: var(--sans); font-size: 0.75rem; color: var(--ink-faint); margin-top: 0.15rem; }
-    .session-badge { font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; background: rgba(107,122,58,0.15); color: var(--olive-light); white-space: nowrap; }
-
-    .form-body-text { font-family: var(--sans); font-size: 0.88rem; color: var(--ink-faint); line-height: 1.7; margin-bottom: 2rem; }
-    .form-cta-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; padding: 1rem 2rem; background: var(--olive); border: none; color: var(--cream); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: background 0.2s; width: 100%; }
-    .form-cta-btn:hover { background: var(--olive-dark); }
-    .form-note { font-family: var(--mono); font-size: 0.6rem; color: var(--ink-faint); letter-spacing: 0.06em; text-align: center; margin-top: 0.85rem; line-height: 1.6; }
-    .form-note a { color: var(--olive-light); text-decoration: none; border-bottom: 1px solid rgba(168,184,106,0.25); }
-    .form-note a:hover { border-color: var(--olive-light); }
+    /* ── WORK WITH ME ── */
+    .work-intro { font-family: var(--serif); font-size: 1.45rem; font-weight: 300; line-height: 1.6; color: var(--ink); max-width: 680px; margin-bottom: 3rem; }
+    .work-intro em { font-style: italic; color: var(--olive-dark); }
+    .services-grid.four { grid-template-columns: repeat(4, 1fr); }
+    .work-cta { margin-top: 3rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .work-cta .btn-solid { display: inline-flex; align-items: center; gap: 0.6rem; padding: 1rem 2rem; background: var(--olive); color: var(--cream); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+    .work-cta .btn-solid:hover { background: var(--olive-dark); }
+    .work-note { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.08em; color: var(--ink-faint); }
 
     /* ── PROJECTS ── */
     .projects { padding: 7rem 5rem; background: var(--cream-dark); }
@@ -224,6 +190,7 @@
     /* ── FOOTER ── */
     footer { background: var(--ink); padding: 2rem 5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
     footer p { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.1em; color: var(--ink-faint); }
+    footer p.disclaimer { letter-spacing: 0.04em; line-height: 1.7; max-width: 720px; }
     .footer-links { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
     .footer-links a { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1.2rem; border: 1px solid rgba(255,255,255,0.15); color: var(--cream); text-decoration: none; font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; }
     .footer-links a:hover { border-color: var(--olive-light); color: var(--olive-light); background: rgba(255,255,255,0.04); }
@@ -242,9 +209,8 @@
     .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
     @media(max-width:1024px){
-      .services-grid { grid-template-columns: 1fr 1fr; }
+      .services-grid, .services-grid.four { grid-template-columns: 1fr 1fr; }
       .writing-grid  { grid-template-columns: 1fr 1fr; }
-      .consult-panel { grid-template-columns: 1fr; }
     }
     @media(max-width:768px){
       nav { padding: 1.1rem 1.5rem; }
@@ -271,11 +237,11 @@
       .connect  { padding: 4rem 1.5rem; }
       .writing-grid { grid-template-columns: 1fr; gap: 2px; }
       .section-title { font-size: 2.2rem; }
-      .services-grid { grid-template-columns: 1fr; gap: 2px; }
+      .services-grid, .services-grid.four { grid-template-columns: 1fr; gap: 2px; }
+      .now { grid-template-columns: 1fr; padding: 3.5rem 1.5rem 4rem; gap: 1.25rem; }
+      .now-list li { font-size: 1.1rem; }
+      .work-intro { font-size: 1.15rem; }
       .service-card  { padding: 2rem 1.5rem; }
-      .consult-panel { grid-template-columns: 1fr; }
-      .consult-left-dark { padding: 2.5rem 1.5rem !important; }
-      .consult-form-panel { padding: 2.5rem 1.5rem !important; }
       .project-item { grid-template-columns: 44px 1fr; gap: 1rem; }
       .project-tag  { display: none; }
       .project-info h3 { font-size: 1.4rem; }
@@ -308,9 +274,9 @@
   <ul class="nav-links" id="navLinks">
     <button class="nav-close-btn" id="navClose" aria-label="Close menu">✕</button>
     <li><a href="#about" class="nav-close">About</a></li>
-    <li><a href="/blog.html" class="nav-close">Writing</a></li>
-    <li><a href="#services" class="nav-close">Services</a></li>
+    <li><a href="#writing" class="nav-close">Writing</a></li>
     <li><a href="#projects" class="nav-close">Projects</a></li>
+    <li><a href="#work" class="nav-close">Work with me</a></li>
     <li><a href="#connect" class="nav-close">Connect</a></li>
   </ul>
 </nav>
@@ -319,7 +285,7 @@
 <section class="hero" id="heroSection">
   <div class="hero-left">
     <h1 class="hero-name">Muhammad<br/><em>Tahir</em></h1>
-    <p class="hero-tagline">Writing about personal finance, investing, and ideas worth sitting with.</p>
+    <p class="hero-tagline">Writing about money, markets, and the slow work of building a life.</p>
   </div>
   <div class="hero-right">
     <div class="hero-deco">∞</div>
@@ -332,8 +298,22 @@
 <section class="about" id="about">
   <span class="about-label">About</span>
   <div class="about-body reveal">
-    <p>I'm Muhammad — a portfolio manager at an asset management firm, and a writer. I write about <em>money, markets,</em> and occasionally the random ideas and observations that catch my attention.</p>
+    <p>Hi, I'm Muhammad, and most people call me Tahir. I started out on engineering internships, including a stint at the Jebba hydropower plant, before <em>money and markets</em> pulled me in. Since then I've moved from Kaduna to Lagos, worked as a product manager, and now work in investment management.</p>
+    <p>I write to think out loud: about money, markets, <em>Islamic finance,</em> and the questions that keep catching my attention. Some of it is practical, like how to buy your first stock on the NGX. Some of it is just me working something out in public.</p>
     <p>Away from the numbers, you'll find me at a <span class="green">table tennis table</span>, lost in a good book, or wandering through an art gallery.</p>
+  </div>
+</section>
+
+<!-- NOW -->
+<section class="now" id="now">
+  <span class="about-label">Now</span>
+  <div class="reveal">
+    <ul class="now-list">
+      <li>Studying for CFA Level 1, sitting the exam in May 2027.</li>
+      <li>Writing on Substack about money, markets, and life.</li>
+      <li>Slowly building something of my own.</li>
+    </ul>
+    <p class="now-updated">Updated November 2026</p>
   </div>
 </section>
 
@@ -379,135 +359,6 @@
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="section-header">
-    <h2 class="section-title dark">Services</h2>
-    <div class="section-line dark"></div>
-  </div>
-
-  <div class="services-grid">
-    <div class="service-card reveal">
-      <span class="service-num">01</span>
-      <span class="service-icon">✍︎</span>
-      <h3 class="service-title">Writing &amp; Ghostwriting</h3>
-      <p class="service-desc">Finance content that reads like it was written by a human who actually understands markets. I write for brands, publications, and founders who need clear, credible financial storytelling.</p>
-      <div class="service-tags">
-        <span class="service-tag">Ghostwriting</span>
-        <span class="service-tag">Finance content</span>
-        <span class="service-tag">Brand content</span>
-        <span class="service-tag">Newsletters</span>
-      </div>
-    </div>
-    <div class="service-card reveal">
-      <span class="service-num">02</span>
-      <span class="service-icon">◎</span>
-      <h3 class="service-title">Speaking</h3>
-      <p class="service-desc">Available for podcast appearances, panel discussions, and conversations on personal finance, investing, and building wealth in the African context — especially Nigeria.</p>
-      <div class="service-tags">
-        <span class="service-tag">Podcasts</span>
-        <span class="service-tag">Panels</span>
-        <span class="service-tag">Personal finance</span>
-        <span class="service-tag">Investing</span>
-      </div>
-    </div>
-    <div class="service-card reveal">
-      <span class="service-num">03</span>
-      <span class="service-icon">◈</span>
-      <h3 class="service-title">Advisory Sessions</h3>
-      <p class="service-desc">Private 1-on-1 sessions or collaborative group workshops — structured feedback on your portfolio, goals, and long-term investment strategy. Specific to your numbers, not generic advice.</p>
-      <div class="service-tags">
-        <span class="service-tag">Portfolio review</span>
-        <span class="service-tag">1-on-1</span>
-        <span class="service-tag">Workshop</span>
-        <span class="service-tag">Risk management</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── CONSULTATION PANEL ── -->
-  <div class="consult-panel">
-
-    <!-- LEFT: session tiers -->
-    <div class="consult-left-dark reveal">
-      <p class="consult-eyebrow">Advisory Sessions</p>
-      <h2 class="consult-heading">Let's talk about<br/><em>your portfolio.</em></h2>
-      <p class="consult-intro">Two formats, depending on whether you want a private conversation or a structured group setting. Both are focused, specific, and built around your actual numbers — not rules of thumb.</p>
-
-      <div class="consult-tiers">
-
-        <!-- Workshop tier -->
-        <div class="consult-tier">
-          <div class="tier-header">
-            <span class="tier-label">Workshop · Group (4–5 people)</span>
-            <div class="tier-price">₦20,000 <small>per person · 1 hour</small></div>
-          </div>
-          <h3 class="tier-title">Guided Portfolio Review</h3>
-          <p class="tier-desc">A collaborative review session for investors who want structured feedback in a group setting. Ideal for improving portfolio structure, risk management, and long-term strategy without committing to private advisory. You organise your own group of up to 5 people.</p>
-        </div>
-
-        <!-- 1-on-1 tier -->
-        <div class="consult-tier">
-          <div class="tier-header">
-            <span class="tier-label">1-on-1 · Private</span>
-            <div class="tier-price">From ₦75,000 <small>60 min · portfolios ₦1M–₦10M</small></div>
-          </div>
-          <h3 class="tier-title">Private Advisory Session</h3>
-          <p class="tier-desc">Focused entirely on your portfolio, goals, and investment strategy. Starting at ₦75,000 for a 60-minute session for portfolios of ₦1M–₦10M, scaling up to a full quarterly advisory engagement depending on portfolio complexity and size.</p>
-        </div>
-
-      </div>
-
-      <!-- Eligibility note -->
-      <div class="eligibility-bar">
-        <span class="eligibility-icon">→</span>
-        <div class="eligibility-text">
-          <strong>Eligibility</strong><br/>
-          Both formats require a portfolio of <strong>₦1M+</strong> or a monthly income of <strong>₦250,000+</strong>. For workshops, all group members must individually meet this threshold.
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT: booking via email -->
-    <div class="consult-form-panel reveal">
-      <h3 class="form-heading">Book a session</h3>
-      <p class="form-subhead">Choose your format · Expect a response within 48 hours</p>
-      <div class="form-divider"></div>
-
-      <div class="session-options">
-        <div class="session-option" data-type="workshop" onclick="selectSession(this)">
-          <div class="session-radio"></div>
-          <div class="session-info">
-            <div class="session-name">Workshop</div>
-            <div class="session-detail">Group of 4–5 · ₦20,000 per person · 1 hour</div>
-          </div>
-          <span class="session-badge">Group</span>
-        </div>
-        <div class="session-option" data-type="private" onclick="selectSession(this)">
-          <div class="session-radio"></div>
-          <div class="session-info">
-            <div class="session-name">1-on-1 Private</div>
-            <div class="session-detail">From ₦75,000 · 60 min · Portfolios ₦1M+</div>
-          </div>
-          <span class="session-badge">Private</span>
-        </div>
-      </div>
-
-      <p class="form-body-text">Fill in a short form — your name, email, what you'd like to focus on, and a little context about where you are right now. Muhammad will follow up within 48 hours to confirm a time.</p>
-
-      <a id="bookingCta"
-         href="https://docs.google.com/forms/d/e/1FAIpQLSc20glYrSSHDhmuCtD36Xxeabds42vNXuYuFYs_GDxAqNfbxQ/viewform"
-         class="form-cta-btn">
-        Request a Session →
-      </a>
-      <p class="form-note">
-        Opens a short Google Form · Takes under 2 minutes
-      </p>
-    </div>
-
-  </div>
-</section>
-
 <!-- PROJECTS -->
 <section class="projects" id="projects">
   <div class="section-header">
@@ -532,11 +383,73 @@
   </a>
 </section>
 
+<!-- WORK WITH ME -->
+<section class="services" id="work">
+  <div class="section-header">
+    <h2 class="section-title dark">Work with me</h2>
+    <div class="section-line dark"></div>
+  </div>
+
+  <p class="work-intro reveal">Alongside my day job, I take on a small number of writing and speaking projects through my company, <em>Bluewater Technology Ltd.</em> If you need someone who understands both the money and how to explain it, let's talk.</p>
+
+  <div class="services-grid four">
+    <div class="service-card reveal">
+      <span class="service-num">01</span>
+      <span class="service-icon">✍︎</span>
+      <h3 class="service-title">Finance Writing &amp; Ghostwriting</h3>
+      <p class="service-desc">Clear, accurate content for fintechs, asset managers, publications, and founders. Articles, newsletters, reports, and LinkedIn ghostwriting on investing and markets in Nigeria and Africa.</p>
+      <div class="service-tags">
+        <span class="service-tag">Ghostwriting</span>
+        <span class="service-tag">Newsletters</span>
+        <span class="service-tag">Thought leadership</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">02</span>
+      <span class="service-icon">☾</span>
+      <h3 class="service-title">Islamic Finance Content</h3>
+      <p class="service-desc">Writing on halal investing, Sukuk, and Shariah-compliant finance for platforms and publications serving Muslim investors. Previously written for IslamicFinanceGuru (UK) and Muslim Finance Library.</p>
+      <div class="service-tags">
+        <span class="service-tag">Halal investing</span>
+        <span class="service-tag">Sukuk</span>
+        <span class="service-tag">Global</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">03</span>
+      <span class="service-icon">◇</span>
+      <h3 class="service-title">Product &amp; Investor Education</h3>
+      <p class="service-desc">Content that helps your users understand your product: onboarding guides, help-centre articles, explainers, and launch content, written by someone who has worked as a product manager in financial services.</p>
+      <div class="service-tags">
+        <span class="service-tag">Fintech</span>
+        <span class="service-tag">Onboarding</span>
+        <span class="service-tag">Explainers</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">04</span>
+      <span class="service-icon">◎</span>
+      <h3 class="service-title">Speaking &amp; Workshops</h3>
+      <p class="service-desc">Podcasts, panels, and talks on personal finance and investing in Nigeria, plus general financial-literacy workshops for companies, communities, and student groups.</p>
+      <div class="service-tags">
+        <span class="service-tag">Podcasts</span>
+        <span class="service-tag">Panels</span>
+        <span class="service-tag">Financial literacy</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-cta reveal">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc20glYrSSHDhmuCtD36Xxeabds42vNXuYuFYs_GDxAqNfbxQ/viewform" target="_blank" rel="noopener" class="btn-solid">Tell me about your project →</a>
+    <span class="work-note">Takes 2 minutes · I reply within 48 hours · Pricing on request</span>
+  </div>
+</section>
+
 <!-- CONNECT -->
 <section class="connect" id="connect">
   <div class="connect-inner reveal">
     <h2>Let's be<br/><em>in touch.</em></h2>
-    <p>If something I've written resonated with you, if you have a question about finance, or if you simply want to say hello — I'm easy to reach.</p>
+    <p>If something I've written resonated with you, or you'd just like to say hello, I'm easy to reach.</p>
     <div class="social-links">
       <a href="https://x.com/iamuhammadtahir" target="_blank" rel="noopener" class="social-link">
         <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.261 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -560,7 +473,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 Muhammad Tahir — All rights reserved</p>
+  <p>© 2026 Muhammad Tahir · Projects delivered through Bluewater Technology Ltd (RC 9159731)</p>
+  <p class="disclaimer">Content on this site is for general education only and is not personalised investment advice. Views are my own and do not represent my employer.</p>
 </footer>
 
 <script>
